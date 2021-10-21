@@ -1,4 +1,5 @@
 import java.lang.*;
+import java.util.*;
 
 public class Program {
 
@@ -42,6 +43,33 @@ public class Program {
         // 簡易的な方法
         text = result + "";
         print(text);
+
+        int[] data = new int[5];
+        data[0] = 1;
+        data[4] = 5;
+        print( data.length );
+
+        for (int item : data) {
+            print( item );
+        }
+
+        // 初期化
+        int[] data2 = { 10, 11, 12 };
+        // 通常 for
+        for (int i = 0; i < data2.length; i++) {
+            print( data2[i] );
+        }
+
+        List<String> list = new ArrayList<String>();
+        list.add("Java");
+        list.add("Scala");
+        list.add("Ruby");
+        str = list.get(0);
+        print( str );
+        print( list.size() );
+
+
+
     }
 
     private static void print(String data) {
