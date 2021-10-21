@@ -9,7 +9,7 @@ public class Program {
         var num = 3.14;
         print(((Object) num).getClass().getSimpleName());
 
-        String str = "清風 情報 工科 学院";
+        String str = "コンピュータ 情報 専門 学校";
         print(str.replace("情報", "Information"));
 
         // ****************************
