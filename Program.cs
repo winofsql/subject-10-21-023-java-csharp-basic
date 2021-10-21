@@ -1,4 +1,6 @@
-﻿using System.Text;
+﻿using System.Collections.Generic;
+using System.Collections;
+using System.Text;
 using System;
 
 namespace cs_basic
@@ -58,6 +60,43 @@ namespace cs_basic
             // 簡易的な方法
             text = result + "";
             print(text);
+
+            int[] data = new int[5];
+            data[0] = 1;
+            data[4] = 5;
+            print( data.Length );
+
+            foreach (var item in data) {
+                print( item );
+            }
+
+            // 初期化
+            int[] data2 = { 10, 11, 12 };
+            // 通常 for
+            for (int i = 0; i < data2.Length; i++) {
+                print( data2[i] );
+            }
+
+            // セットするクラスを指定しないリスト
+            ArrayList list = new ArrayList();
+            list.Add("Java");
+            list.Add("Scala");
+            list.Add("Ruby");
+            // 取り出すときに元のクラスにキャスト
+            str = (string)list[0];
+            print( str );
+            print( list.Count );
+
+            List<string> clist = new List<string>();
+            clist.Add("Java");
+            clist.Add("Scala");
+            clist.Add("Ruby");
+            str = clist[0];
+            print( str );
+            print( clist.Count );
+
+
+
         }
 
         private static void print( string data ) {
