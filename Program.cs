@@ -12,7 +12,7 @@ namespace cs_basic
             var num = 3.14;
             print(num.GetType().ToString());
 
-            string str = "清風 情報 工科 学院";
+            string str = "コンピュータ 情報 専門 学校";
             print(str.Replace("情報", "Information"));
 
             // ****************************
