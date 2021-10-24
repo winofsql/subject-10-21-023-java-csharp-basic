@@ -3,7 +3,7 @@ using System.Collections;
 using System.Text;
 using System;
 
-namespace cs_basic
+namespace compare_cs_01
 {
     public class Program {
         public static void Main(string[] args) {
