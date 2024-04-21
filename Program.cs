@@ -95,8 +95,6 @@ namespace compare_cs_01
             print( str );
             print( clist.Count );
 
-
-
         }
 
         private static void print( string data ) {
